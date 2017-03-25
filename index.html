@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Droplr | Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="container-fluid margin-top-div">
+  <div class="row">
+    <div class="col-sm-1 col-xs-1"></div>
+    <div class="col-sm-10">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <span class="hidden-sm hidden-lg hidden-md hamburger-icon" onclick="openNav()">&#9776;</span>
+              <a class="navbar-brand" href="#">
+              <div class="container-new">
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+              </div>
+              <img src="img/logo.png">
+              </a>
+              <div class="col-sm-5 col-md-3 top-right-container">
+                <div class="hidden-xs col-sm-10 col-md-10 input-div">
+                    <input class="search-input" type="search">
+                    <i class="fa fa-search" aria-hidden="true"></i> 
+                </div> 
+                <div class="col-sm-2 col-md-2"><img src="img/profile-pic.png"></div>
+              </div>                
+            </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col-sm-1 col-xs-1"></div>
+  </div>
+</div>
+</header>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 main-container">        
+        <div class="hidden-xs part-one">
+         <aside>
+          <div class="profile-pic"><img src="img/profile.png" class="profile"></div>
+          <div class="sidebar-heading">Main</div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-compass" aria-hidden="true"></i>  Overview</a></div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-life-ring" aria-hidden="true"></i>  Activity</a></div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>  Dearest</a></div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Folders</a></div>
+          <div class="sidebar-heading">Filter</div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>  Images</a></div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-play-circle-o" aria-hidden="true"></i>  Audio</a></div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i>  Video</a></div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>  Notes</a></div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-link" aria-hidden="true"></i>  Links</a></div>
+          <div class="sidebar-text"><a href="#"><i class="fa fa-files-o" aria-hidden="true"></i>  Files</a></div>
+          <div class="sidebar-bottom">
+            50 GB/100 GB
+            <i class="fa fa-plus" aria-hidden="true"></i><br>
+            <progress value="60" max="100"></progress>
+          </div>
+         </aside>
+        </div>
+        <div class="col-sm-12 main-section">
+          <section>
+            <div class="overview">
+                <span>Overview</span>
+            </div>
+            <div class="overview-bottom">
+                <div class="col-sm-6 col-md-6">
+                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  <i class="fa fa-times-circle" aria-hidden="true"></i>
+                  <span class="item-text">2 Items Selected</span>
+                </div>
+                 <div class="col-sm-6 col-md-5 overview-right">
+                   <div class="col-sm-3 col-xs-2 text-center section-text">Name</div>
+                   <div class="col-sm-2 col-xs-2 section-text">Size</div>
+                   <div class="col-sm-3 col-xs-2 section-text">Views</div>
+                   <div class="col-sm-4 col-xs-6">
+                      <input type="submit" value="Uploaded" class="uploaded-btn">
+                   </div>
+                 </div><br>
+            </div>
+            <hr>
+            <article>
+                <div class="post"></div>
+            </article>
+          </section>  
+        </div>
+      </div>
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#"><img src="img/profile.png"></a>
+  <a href="#"><i class="fa fa-compass" aria-hidden="true"></i> Overview</a>
+  <a href="#"><i class="fa fa-life-ring" aria-hidden="true"></i> Activity</a>
+  <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> Dearest</a>
+  <a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Folders</a>
+  <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i> Images</a>
+  <a href="#"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Audio</a>
+  <a href="#"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Video</a>
+  <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Notes</a>
+  <a href="#"><i class="fa fa-link" aria-hidden="true"></i> Links</a>
+  <a href="#"><i class="fa fa-files-o" aria-hidden="true"></i> Files</a>
+  <a href="#">50 GB/100 GB<br><progress value="60" max="100"></progress></a>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/data.js"></script>
+<script type="text/javascript">
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+      }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0%";
+      }
+      $(document).ready(function () {
+          $('#lower-east-side').css("background-color","#e4e9eb");
+          $('#lower-east-side').css("border-radius","4px");
+          $('#skyline').css("background-color","#e4e9eb");
+          $('#skyline').css("border-radius","4px");
+      });
+</script>
+</html>
